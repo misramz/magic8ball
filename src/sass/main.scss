@@ -1,0 +1,31 @@
+@import "bulma";
+
+
+
+
+body {
+  background: url(magic.jpg);
+}
+
+.container {
+  width: 800px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+p {
+  font-size: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+input {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+
+a {
+  width: 300px;
+  height: 200px;
+}
