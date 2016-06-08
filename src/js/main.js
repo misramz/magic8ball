@@ -21,19 +21,27 @@ let answers = [
   'Absolutly'
 ];
 
-let answer = _.sample(answers);
+function createNewGame() {
+  let answer = _.sample(answers);
+  let game = new Game(answer);
+  console.log(game);
+  return answer;
+}
 
-console.log(answer);
+// on page load
+createNewGame();
 
-// creating my instance
-let game = new Game(answer);
 
 let button = $('.button');
 let answerArea = $('p');
 
 button.on('click', function (event){
   event.preventDefault();
-  answerArea.append(answer);
+  answerArea.empty();
+  let answer = createNewGame();
+  setTimeout( function() {
+    answerArea.append(answer);
+  }, 1000);
 
 
   console.log(button);
@@ -42,9 +50,4 @@ button.on('click', function (event){
 
 
 
-})
-setTimeout( function(){
-  console.log('game', game);
-
-
-},1000);
+});

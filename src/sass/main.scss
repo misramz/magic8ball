@@ -1,16 +1,25 @@
-@import "bulma";
-
+ @import "bulma";
 
 
 
 body {
-  background: url(magic.jpg);
+
+
+
+
+
 }
+
 
 .container {
   width: 800px;
+  height: 800px;
   border: 1px solid black;
   text-align: center;
+  background-image: url('http://appinventor.mit.edu/explore/sites/all/files/ai2tutorials/magic8ball/magic8ball.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 p {
