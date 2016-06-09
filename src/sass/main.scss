@@ -23,18 +23,23 @@ body {
 }
 
 p {
-  font-size: 200px;
+  font-size: 20px;
   text-align: center;
   display: inline-block;
+  margin-top: 300px;
+  margin-right: 280px;
 }
 
 input {
   width: 400px;
   height: 100px;
   text-align: center;
+  margin-right: 400px;
 }
 
 a {
   width: 300px;
   height: 200px;
+  float: left;
+
 }
