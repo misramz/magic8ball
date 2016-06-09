@@ -2,13 +2,10 @@ import $ from 'jquery';
 
 import _ from 'lodash';
 
-// my blueprint
-class Game {
 
-  constructor(answer) {
-    this.answers = answer;
-  }
-}
+import { Game } from '../src/js/classes';
+
+// my blueprint
 
 let answers = [
   'Yes',

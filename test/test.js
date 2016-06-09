@@ -2,7 +2,7 @@
 import chai from 'chai';
 
 // Import Any Files to Test
-
+import { Game } from '../src/js/classes';
 // Set Chai Constants
 const expect = chai.expect;
 const should = chai.should();
@@ -13,8 +13,8 @@ describe('Something We Want To Test', function () {
   describe('Testing the Creation of Something', function () {
 
     it('should exist after we create it', function () {
-      let x = new Object;
-      expect(x).to.be.an.instanceof(Object);
+      let game = new Game();
+      expect(game).to.be.an.instanceof(Game);
     });
 
   });
